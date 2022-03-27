@@ -1,0 +1,230 @@
+mixin svg(name)
+    svg(class="icon icon-" + name)
+        use(xlink:href="images/sprite/sprite.svg#"+name)
+html(lang='ru') 
+    head 
+        meta(charset='utf-8')
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon", href="images/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/jquery.fancybox.min.css")
+        link(rel="stylesheet", href="owl.carousel.css")
+        link(rel="stylesheet", href="owl.theme.default.css")
+        link(rel="stylesheet", href="css/cssmenu.css")
+        script(src="js/jquery-1.10.2.js") 
+        script(src="js/main.js")
+        script(src="js/jquery.maskedinput.min.js")
+        script 
+            include js/slider.js
+        title Заголовок title
+    body
+        header 
+            .main 
+                .h-line
+                    .h-line-bl1 
+                        .menu-but
+                            .menu-ico
+                                span
+                        .b-look
+                            +svg('look')
+                            span РЕЖИМ ДЛЯ<br> СЛАБОВИДЯЩИХ
+                    .h-line-bl2
+                        .h-adres 
+                            +svg('point')
+                            span г. Обнинск, <br>ул. Ленина, д. 170
+                        .h-phone 
+                            a(href='#')
+                                +svg('phone')
+                            span.h-phone-box 
+                                span Телефон
+                                a(href='#').h-phone-text 8 (484) 393-99-77
+        nav
+            ul#cssmenu 
+                li 
+                    a(href="#") Избирателям  
+                li 
+                    a(href="#") Глава городского собрания  
+                li 
+                    a(href="#") Структура городского собрания 
+                li 
+                    a(href="#") Деятельность  
+                li.str
+                    .but-submenu
+                    a(href="#") Депутаты  
+                    ul.b-menu__m1 
+                        li  
+                            a(href="#") График приема
+                        li  
+                            a(href="#") График приема
+                        li  
+                            a(href="#") График приема
+                        li  
+                            a(href="#") График приема
+                li 
+                    a(href="#") История
+        main 
+            .b-logo 
+                a(href='#')
+                    img(src="images/pic1.jpg", alt="Милосердие")
+                .b-logo-text Министерство труда и социальной защиты Калужской области ГБУ КО Обнинский центр социальной помощи семье и детям
+                .b-logo-zag 
+                    h1 МИЛОСЕРДИЕ
+            .main-cont 
+                .main-cont-left 
+                    .main-news 
+                        .main-news-line
+                            .zag НОВОСТИ
+                            .but 
+                                a(href="#") Архив новостей
+                        .news-big 
+                            a(href="#") 
+                                img(src="images/pic2.jpg", alt="")
+                            .news-big-title 
+                                a(href="#") МАСЛЕНИЧНЫЕ ИГРЫ И ЗАБАВЫ<br> В ЦЕНТРЕ «МИЛОСЕРДИЕ»
+                                span.news-big-date 25.02.2022
+                        .b-news 
+                            .news-item 
+                                a(href="#")
+                                    img(src="images/pic3.jpg", alt="")
+                                .news-item-title    
+                                    a(href="#") ВОСПИТАННИКИ ЦЕНТРА «МИЛОСЕРДИЕ» ПРИНЯЛИ УЧАСТИЕ В ИНТЕРАКТИВНОЙ ИГРЕ "ПРИКАЗАНО ВЫЖИТЬ: СОЦИУМ"
+                                .news-item-date 25.02.2022
+                            .news-item 
+                                a(href="#")
+                                    img(src="images/pic3.jpg", alt="")
+                                .news-item-title    
+                                    a(href="#") ВОСПИТАННИКИ ЦЕНТРА «МИЛОСЕРДИЕ» ПРИНЯЛИ УЧАСТИЕ В ИНТЕРАКТИВНОЙ ИГРЕ "ПРИКАЗАНО ВЫЖИТЬ: СОЦИУМ"
+                                .news-item-date 25.02.2022
+                            .news-item 
+                                a(href="#")
+                                    img(src="images/pic3.jpg", alt="")
+                                .news-item-title    
+                                    a(href="#") ВОСПИТАННИКИ ЦЕНТРА «МИЛОСЕРДИЕ» ПРИНЯЛИ УЧАСТИЕ В ИНТЕРАКТИВНОЙ ИГРЕ "ПРИКАЗАНО ВЫЖИТЬ: СОЦИУМ"
+                                .news-item-date 25.02.2022
+
+                .main-cont-right
+                    .banner 
+                        a(href="#")
+                            img(src="images/pic4.jpg", alt="")  
+                    .banner 
+                        a(href="#")
+                            img(src="images/pic5.jpg", alt="")  
+                    .banner 
+                        a(href="#")
+                            img(src="images/pic6.jpg", alt="")  
+                    .banner 
+                        a(href="#")
+                            img(src="images/pic7.jpg", alt="")  
+                    .banner 
+                        a(href="#")
+                            img(src="images/pic8.jpg", alt="")
+            .b-info 
+                .info-item
+                    +svg('need-help')
+                    .info-item-title НУЖНА ПОМОЩЬ!
+                    .info-item-text Для детей и семей, находящихся в трудной жизненной ситуации примем в дар одежду и обувь, детские и подростковые велосипеды, детские коляски, самокаты, ролики, мебель и бытовую технику б/у. тел.: <b>8 (484) 396-32-60</b> 
+                .info-item
+                    +svg('pomojem')
+                    .info-item-title ПОМОЖЕМ СЕМЬЯМ!
+                    .info-item-text Уважаемые жители города! Центр «Милосердие» приглашает принять участие в акции «Доброта и добро - поступок благодателя!», по сбору канцелярских принадлежностей для детей из семей, находящихся в трудной жизненной ситуации. Справки по тел. : <b>8 (484) 396-32-60</b>
+                .info-item
+                    +svg('pamyat')
+                    .info-item-title ПАМЯТНЫЕ ДАТЫ ВОЕННОЙ ИСТОРИИ ОТЕЧЕСТВА
+                    .info-item-text Мы добавили новую вкладку «Памятные даты военной истории отечества» в целях проведения информационно-пропагандистских мероприятий ежемесячно будут добавляться материалы, подготовленные Российским военно историческим обществом. 
+            .b-form 
+                .b-form-left
+                    .zag ЗАДАТЬ ВОПРОС СПЕЦИАЛИСТУ
+                    .b-but-chk
+                        label(for="chk1", class='but-chk chk-active') Юристу
+                            input(type="radio", name='f_Komu', id='chk1', value='1', checked)
+                        label(for="chk2", class='but-chk') Педагогу
+                            input(type="radio", name='f_Komu', id='chk2', value='2')
+                        label(for="chk3", class='but-chk') Психологу
+                            input(type="radio", name='f_Komu', id='chk3', value='3')
+                    p Здесь Вы можете задать вопрос нашему юрисконсульту, также на базе нашего центра ведется очный прием по личным вопросам. Данная услуга рассчитана на социальную группу населения.
+                    p <b>Вторник и Четверг: 14:00 - 16:00.    Телефон секретаря: 8(48439)3-99-77</b>
+                .b-form-right
+                    .b-form-row 
+                        input(type="text", name='f_Name', placeholder='Ваше имя')
+                        input(type="text", name='f_Email', placeholder='Ваше e-mail')
+                    textarea(name="f_Message", cols="30", rows="6", placeholder='Сообщение') 
+                    .b-form-row
+                        .check 
+                            input(type="checkbox", name='f_Check', id='policy')
+                            label(for="policy") Ознакомлен(на) с пользовательским соглашением
+                        input(type="submit", value='Отправить')
+        .footer-banners
+            .main 
+                .f-banner 
+                    a(href="#")
+                        img(src="images/baner1.jpg", alt="") 
+                .f-banner 
+                    a(href="#")
+                        img(src="images/baner2.jpg", alt="") 
+                .f-banner 
+                    a(href="#")
+                        img(src="images/baner3.jpg", alt="") 
+                .f-banner 
+                    a(href="#")
+                        img(src="images/baner4.jpg", alt="") 
+                .f-banner 
+                    a(href="#")
+                        img(src="images/baner5.jpg", alt="") 
+                .f-banner 
+                    a(href="#")
+                        img(src="images/baner6.jpg", alt="") 
+        footer
+            .main 
+                .f-bl1
+                    .f-logo     
+                        img(src="images/logo-f.jpg", alt="") 
+                        p Министерство труда и социальной защиты Калужской областиГБУ КО Обнинский центр социальной помощи семье и детям
+                        span МИЛОСЕРДИЕ
+                    .created 
+                        p Разработано: 
+                            - let kp = '<span>K</span>project';
+                            a(href="https://kproject.su", target='_blank') !{kp}
+                .f-bl2
+                    .f-menu 
+                        a(href="#") Информация о центре
+                        span Положительная инфраструктура детства
+                        a(href="#") Страница Уполномоченного по правам ребенка
+                        a(href="#") Социальный контракт
+                        a(href="#") Сведения об образовательной деятельности
+                        a(href="#") Сведения об организации в соответствии с законодательством о социальном обслуживании
+                        a(href="#") Отчетная документация
+                        a(href="#") Нормативно-правовые документы
+                        a(href="#") Служба «Семейная деспетчерская»
+                        a(href="#") Проект «Тепло маминых рук» 
+                .f-bl3 
+                    .f-menu
+                        a(href="#") Методический материал
+                        a(href="#") Архив новостей
+                        a(href="#") Деятельность
+                        a(href="#") Галерея
+                        a(href="#") Журнал
+                        a(href="#") Вакансии
+                        a(href="#") Обратная связь
+                        a(href="#") Задать вопрос специалисту
+                        a(href="#") Часто задаваемые вопросы
+                        a(href="#") Анкета
+                        a(href="#") Контакты  
+                .f-dev
+                .f-bl4 
+                    .f-ico-block 
+                        +svg('point-w')
+                        .f-ico-block_text <b>Наш адрес:</b><br> г. Обнинск, ул. Ленина, д. 170
+                    .f-ico-block 
+                        +svg('time-w')
+                        .f-ico-block_text <b>Время работы:</b><br> Пн-Пт с 08:00 до 17:00 <br>Перерыв с 13:00 до 14:00
+                    .f-ico-block 
+                        +svg('point-w')
+                        .f-ico-block_text <b>Наши телефоны:</b><br> 8 (484) 393-99-77 <br>8 (484) 396-32-60 <br> тел./факс: 8 (484) 393-97-97
+
+        #topcontrol(title='К началу страницы')
+        script(src="js/wow.min.js") 
+        script(src="js/jquery.fancybox.min.js") 
+        script 
+            include js/wow.js
+                
+                
